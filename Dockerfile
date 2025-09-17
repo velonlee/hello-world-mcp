@@ -6,10 +6,13 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci --only=production
+RUN npm install
 
 # Copy source code
-COPY src/ ./src/
+COPY . .
+
+# Make cli.js executable
+RUN chmod +x cli.js
 
 # Expose port
 EXPOSE 3000
