@@ -1,0 +1,16 @@
+{
+  "name": "hello-world-mcp",
+  "version": "1.0.0",
+  "description": "A simple Hello World MCP server for learning and demonstration",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": ["mcp", "hello-world", "demo", "learning"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0"
+  }
+}
