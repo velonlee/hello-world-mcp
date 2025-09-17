@@ -1,0 +1,39 @@
+name: hello-world-mcp
+version: 1.0.0
+description: A simple Hello World MCP server for learning and demonstration
+author: velonlee
+license: MIT
+
+server:
+  type: stdio
+  command: node
+  args: ["src/index.js"]
+
+capabilities:
+  tools: true
+  resources: false
+  prompts: false
+
+tools:
+  - name: hello
+    description: Say hello to someone
+    inputSchema:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Name of the person to greet
+      required: [name]
+  
+  - name: add
+    description: Add two numbers
+    inputSchema:
+      type: object
+      properties:
+        a:
+          type: number
+          description: First number
+        b:
+          type: number
+          description: Second number
+      required: [a, b]
