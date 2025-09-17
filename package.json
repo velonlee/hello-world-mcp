@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "A simple Hello World MCP server for learning and demonstration",
   "main": "src/index.js",
+  "bin": {
+    "hello-world-mcp": "cli.js"
+  },
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "node src/index.js"
+    "dev": "node src/index.js",
+    "cli": "node cli.js"
   },
   "keywords": ["mcp", "hello-world", "demo", "learning"],
   "author": "velonlee",
@@ -16,5 +20,11 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "files": [
+    "src/",
+    "cli.js",
+    "package.json",
+    "README.md"
+  ]
 }
