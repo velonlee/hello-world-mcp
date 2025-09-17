@@ -1,0 +1,7 @@
+{
+  "name": "hello-world-mcp",
+  "version": "1.0.0",
+  "description": "A simple Hello World MCP server",
+  "main": "src/index.js",
+  "type": "module"
+}
