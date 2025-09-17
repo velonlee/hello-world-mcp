@@ -1,7 +1,17 @@
 name: hello-world-mcp
 version: 1.0.0
-description: A simple Hello World MCP server
+description: A simple Hello World MCP server for learning and demonstration
+
+build:
+  command: npm install
+  output: dist
 
 server:
   command: node
   args: ["src/index.js"]
+  type: stdio
+
+capabilities:
+  tools: true
+  resources: false
+  prompts: false
