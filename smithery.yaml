@@ -1,7 +1,7 @@
 name: hello-world-mcp
 version: 1.0.0
-description: A simple Hello World MCP server
+description: A simple Hello World MCP server for learning and demonstration
 
 server:
-  command: node
-  args: ["index.js"]
+  command: python
+  args: ["main.py"]

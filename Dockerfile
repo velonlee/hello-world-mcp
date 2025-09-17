@@ -1,18 +1,18 @@
-FROM node:18-alpine
+FROM python:3.11-slim
 
 WORKDIR /app
 
-# Copy package files
-COPY package*.json ./
+# Copy requirements file
+COPY requirements.txt .
 
 # Install dependencies
-RUN npm install
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy source code
 COPY . .
 
 # Expose port
-EXPOSE 3000
+EXPOSE 8000
 
 # Start the application
-CMD ["node", "index.js"]
+CMD ["python", "main.py"]
